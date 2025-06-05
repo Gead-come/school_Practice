@@ -1,4 +1,4 @@
-package scool_1;
+package school_1;
 
 import java.util.regex.*;
 
