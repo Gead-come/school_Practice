@@ -18,7 +18,7 @@ public class ioStream_5 {
                 gg(file);
             }else if (file.getName().endsWith(".png") || file.getName().endsWith(".jpg")){
                 System.out.println(file.getName());
-                System.out.println("找到图片：" + file.getAbsolutePath());
+                System.out.println("找到图片：" + file.getAbsolutePath()); //
             }
         }
     }
