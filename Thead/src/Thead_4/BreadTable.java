@@ -5,24 +5,24 @@ public class BreadTable {
     public synchronized void produce(){
         while(hasBread){
             try {
-                wait();
+                wait(); // 等待
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
         hasBread  = true;
         System.out.println("生产者生产開始");
-        notify();
+        notify(); // 唤醒
     }
     public synchronized void consume(){
-      while(!hasBread){
+      while(!hasBread){   // 沒有パン
           try {
               wait();
           } catch (InterruptedException e) {
               e.printStackTrace();
           }
       }
-      hasBread = false;
+      hasBread = false; // 沒有パン
       System.out.println("消费者一枚ぱんを食べました");
       notify();
     }

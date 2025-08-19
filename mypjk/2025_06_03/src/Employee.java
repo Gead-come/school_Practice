@@ -5,7 +5,7 @@ public class Employee {
 
      private int age;
 
-     private String department;
+     private  String department;
 
      @Override
      public String toString() {
@@ -15,7 +15,9 @@ public class Employee {
 
      }
 
-     public Employee() {
+     public Employee(String department) {
+
+
      }
 
      public String getName() {

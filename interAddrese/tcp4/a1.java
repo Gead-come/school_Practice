@@ -7,7 +7,7 @@ public class a1 {
     public static void main(String[] args) throws IOException {
 
 
-        try (Socket socket = new Socket("172.20.10.15", 10086);
+        try (Socket socket = new Socket("127.0.0.1", 10086);
              BufferedInputStream io = new BufferedInputStream(new FileInputStream("C:\\Users\\Webデザイン科\\IdeaProjects\\untitled\\img_001.png"));
              BufferedOutputStream to = new BufferedOutputStream(socket.getOutputStream());
              BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
@@ -17,8 +17,8 @@ public class a1 {
                 to.write(bytes, 0, len);
                 to.flush();
             }
-            socket.shutdownOutput();
-            String line = reader.readLine();
+            socket.shutdownOutput();   // 关闭输出流
+            String line = reader.readLine();  //
             System.out.println(line);
         }  catch (IOException e) {
             e.printStackTrace();

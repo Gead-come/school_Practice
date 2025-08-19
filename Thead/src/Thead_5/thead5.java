@@ -36,7 +36,7 @@ public class thead5 extends Thread{
                 System.out.println(getName()+"的奖金是"+sum);
             }
         }catch (InterruptedException e){
-            Thread.currentThread().interrupt();
+            Thread.currentThread().interrupt();  // 恢复中断状态
             System.out.println(getName()+"终端结果"+MyPrize);
         }
     }

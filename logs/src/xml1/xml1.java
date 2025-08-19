@@ -1,5 +1,6 @@
 package xml1;
 
+import lombok.extern.slf4j.Slf4j;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -10,7 +11,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+@Slf4j
 public class xml1 {
     public static void main(String[] args) throws DocumentException {
 
@@ -22,6 +23,7 @@ public class xml1 {
 
         Document read = saxReader.read(file);
         System.out.println(read);
+         log.info(String.valueOf(read));
         Element rootElement = read.getRootElement();
         System.out.println(rootElement);
         List<Element> elements = rootElement.elements("stu");

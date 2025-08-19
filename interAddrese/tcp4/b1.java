@@ -12,7 +12,7 @@ public class b1 {
               ServerSocket serverSocket = new ServerSocket(10086);
               Socket accept = serverSocket.accept();
               BufferedInputStream to = new BufferedInputStream(accept.getInputStream());
-              BufferedOutputStream io = new BufferedOutputStream(new FileOutputStream("C:\\Users\\Webデザイン科\\Desktop\\lalalalal\\新しいフォルダー\\111\\+"+name+".png"));
+              BufferedOutputStream io = new BufferedOutputStream(new FileOutputStream("C:\\Users\\Webデザイン科\\Desktop\\Java&web\\+"+name+".png"));
               BufferedWriter bf = new BufferedWriter(new OutputStreamWriter(accept.getOutputStream()))) {
           byte[] bytes = new byte[1024];
           int len;

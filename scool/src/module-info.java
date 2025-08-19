@@ -1,5 +1,6 @@
 module selfjava{
     requires java.net.http;
     requires java.desktop;
+    requires jdk.compiler;
 
 }

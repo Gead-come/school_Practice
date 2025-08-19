@@ -21,7 +21,7 @@ public class b6 {
                 new MyThreadFactory6("抢票线程"),  // 线程工厂
                 new ThreadPoolExecutor.AbortPolicy()  // 拒绝策略
         );
-        ServerSocket server = new ServerSocket(10086);
+        ServerSocket server = new ServerSocket(8888);
         System.out.println("服务端启动");
         System.out.println("等待客户端连接");
         while (true) {

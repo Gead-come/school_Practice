@@ -12,7 +12,7 @@
 
     <!-- 输出到日志文件，按日期滚动 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>C:\Users\Webデザイン科\Desktop\111\1111\logs\app.log</file>
+        <file>C:\Users\Webデザイン科\Desktop\Java&amp;web\logback\app.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 日志按天滚动保存 -->
             <fileNamePattern>logs/app.%d{yyyy-MM-dd}.log</fileNamePattern>

@@ -1,7 +1,14 @@
 package reflect;
 
+import java.math.BigDecimal;
+
 public class reflect1 {
     public static void main(String[] args) throws ClassNotFoundException {
+
+
+        BigDecimal a = new BigDecimal("0.1");
+        BigDecimal b = new BigDecimal("0.2");
+        System.out.println(a.add(b));
 
           // 认识反射
 
